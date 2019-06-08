@@ -1,0 +1,33 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    {% if customers %}
+        <table id="customers" class="table table-striped">
+            <thead>
+            <tr>
+                <th>Base for Customers</th>
+                <th>Actions</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for customer in customers %}
+                <tr>
+                    <td>{{ customer.imie}}</td>
+                    <td>
+                        <a href="{{ path('show', {'id': customer.id}) }}" class="btn btn-dark"  data-id="{{ customer.id }}">Show</a>
+                        <a href="{{ path('delete', {'id': customer.id}) }}" class="btn btn-danger delete-customer" data-id="{{ customer.id }}">Delete</a>
+
+                    </td>
+                </tr>
+            {% endfor %}
+            </tbody>
+
+        </table>
+    {% else %}
+        <p>No customers to display</p>
+    {% endif %}
+{% endblock %}
+
+{% block javascripts %}
+    <script src="{{asset('/assets/js/delete.js')}}"></script>
+{% endblock %}

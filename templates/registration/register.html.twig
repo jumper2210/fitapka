@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Resjestracja{% endblock %}
+
+{% block body %}
+<form method="post">
+    <h1 class="h3 mb-3 font-weight-normal">Register</h1>
+
+        {{ form_start(registrationForm) }}
+        {{ form_row(registrationForm.username) }}
+        {{ form_row(registrationForm.plainPassword) }}
+
+    <button class="btn btn-lg btn-primary" type="submit">
+        Zajerestruj
+    </button>
+    {{ form_end(registrationForm) }}
+</form>
+    {% endblock %}

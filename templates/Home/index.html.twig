@@ -1,0 +1,115 @@
+{% extends 'showmyhome.html.twig' %}
+{% block body %}
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+				<!-- Intro -->
+					<div id="intro">
+						<h1>Witaj w fitapce</h1>
+					</div>
+
+				<nav>
+
+				</nav>
+				<!-- Header -->
+
+				<header id="header">
+					<a href="{{ path('app_login') }}" class="logo">Logowanie</a><br/>
+					<a href="{{ path('app_register') }}"class="logo">Rejestracja</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li class="active"><a href="index.html.twig"></a></li>
+
+						</ul>
+
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Featured Post -->
+							<article class="post featured">
+								<header class="major">
+									<h2><a href="#">KRZYSZTOF SKOCZEK - ROAD TO FIT BODY<br /></a></h2>
+									<p>Poniżej znajdziesz oferty różnych diet i treningów<br />
+									Okres każdej oferty to 3 miesiące<br /></p>
+								</header>
+								<a href="#" class="image main"><img src="{{ asset('images/siłownia_mińsk.jpg') }}" alt="" /></a>
+
+							</article>
+
+						<!-- Posts -->
+							<section class="posts">
+
+								<article>
+									<header>
+										<h2><a href="#">Ćwiczenia<br /></a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="{{asset('images/ciezary.jpg') }}" alt="" /></a>
+									<p> Jeśli interesują Cię same ćwiczenia, śmiało klikaj.
+									</p>
+
+									<ul class="actions special">
+										<li><a href="{{ path('new_customer') }}" class="button">Zamów już teraz</a></li>
+									</ul>
+								</article>
+
+
+								<article>
+									<header>
+										<h2><a href="#">Rekompozycja<br /></a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="{{asset('images/rekompozycja.jpg')}}" alt="" /></a>
+									<p>Chcesz za jednym razem schudnąć i urosnąć? Żaden problem !</p>
+									<ul class="actions special">
+										<li><a href="{{ path('new_customer') }}" class="button">Zamów już teraz</a></li>
+									</ul>
+								</article>
+
+
+								<article>
+									<header>
+
+										<h2><a href="#">Redukcja<br /></a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="{{asset('images/redukcja.jpg')}}" alt="" /></a>
+									<p>Jeśli interesuję Cię szybki schudnięcie kup tą diatę !.</p>
+									<ul class="actions special">
+										<li><a href="{{ path('new_customer') }}" class="button">Zamów już teraz</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+
+										<h2><a href="#">Masa<br /></a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="{{asset('images/masa.jpg')}}" alt="" /></a>
+									<p>Duże bice i jeszcze większe cyce ? Ta dieta jest specjalnie dla Ciebie !</p>
+									<ul class="actions special">
+										<li><a href="{{ path('new_customer') }}" class="button">Zamów już teraz</a></li>
+									</ul>
+								</article>
+							</section>
+
+
+
+					</div>
+
+
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+
+
+{% endblock %}
