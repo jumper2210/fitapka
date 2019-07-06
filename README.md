@@ -9,5 +9,5 @@ This will be my in-store. Everyone after logging in will be able to buy the chos
 - Symfony 4
 - Doctrine
 - Twig
-- Template from [(https://html5up.net/massively](https://html5up.net/massively)
+- Template from [https://html5up.net/massively](https://html5up.net/massively)
 - Bootstrap 4 [https://bootswatch.com/cyborg](https://bootswatch.com/cyborg)
