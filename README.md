@@ -1,7 +1,7 @@
 # fitapka
 
 ## Info
-This will be my in-store. Everyone after logging in will be able to buy the chosen diet.(In progress...)
+This will be my in-store. Everyone after logging in will be able to buy the chosen diet.
 
 
 ## Technologies
